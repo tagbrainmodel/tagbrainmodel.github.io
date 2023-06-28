@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagBrain</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/brain.js"></script>
+    <script src="models/TagBrain.js"></script>
+    <script src="js/texts.js"></script>
+    <script src="js/code.js"></script>
+</head>
+<body id="body">
+
+    <div class="white-boxcontainer">
+        <h1>TagBrain</h1>
+        <div class="apartados">
+            <span onclick="clasificacion()">🔎 Clasificación</span>
+            <span onclick="aboutTagBrain()">🤔 ¿Que es TagBrain?</span>
+            <span onclick="textoAleatorio()">🎲 Texto aleatorio</span>
+            <span onclick="licencia()">📃 Licencia</span>
+            <a href="https://github.com/tagbrainmodel/tagbrainmodel.github.io" target="_blank"><img src="img/github-icon.png">Github</a>
+        </div>
+        <div class="apartados-mobile">
+            <span onclick="clasificacion()">🔎</span>
+            <span onclick="aboutTagBrain()">🤔</span>
+            <span onclick="textoAleatorio()">🎲</span>
+            <span onclick="licencia()">📃</span>
+            <a href="https://github.com/tagbrainmodel/tagbrainmodel.github.io" target="_blank"><img src="img/github-icon.png"></a>
+        </div>
+        <textarea placeholder="Escribe tu texto aqui:" id="text"></textarea>
+        <div class="button-result">
+            <button onclick="startAI()" id="button">Clasificar</button>
+            <span id="result">👋</span>
+        </div>
+    </div>
+    
+</body>
+
+</html>
